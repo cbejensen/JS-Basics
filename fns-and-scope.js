@@ -5,6 +5,7 @@ var name = 'Tyler';
 //Create a function called isTyler that accepts name as it's only argument.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
+  //Code here
 
 function isTyler(name) {
   if(name === 'Tyler'){
@@ -23,15 +24,14 @@ console.log(isTyler(name));
 
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
+  //Code Here
+
 var getName = function(){
   var name = prompt("What is your name?");
   return name;
 }
-var answer = getName();
-console.log(answer);
 
-  //Code Here
-
+console.log(getName());
 
 //Next Problem
 
@@ -42,6 +42,10 @@ console.log(answer);
 
   //Code Here
 
+function welcome(){
+    alert("Welcome, " + getName() + "!");
+}
+console.log(welcome());
 
 //Next problem
 
@@ -52,6 +56,9 @@ console.log(answer);
 
   //Answer Here
 
+  //Arguments are passed in to the function
+  //Paramters are declared in the functon before knowing what the argument will be
+  
 
 //Next problem
 
@@ -62,7 +69,14 @@ console.log(answer);
 
   //Answer Here
 
+  //false
+  //0
+  //""
+  //null
+  //undefined
+  //NaN
 
+  //You can use an if statement to check if something is falsy or truthy
 
 //Next Problem
 
@@ -71,14 +85,20 @@ console.log(answer);
 //Create a function called myName that returns your name
 
   //Code Here
+function myName(name){
+    return name;
+}
+
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
 
+var newMyName = myName("Christian");
+
 //Now alert the result of invoking newMyName
 
-
+alert(newMyName);
 
 //Next problem
 
