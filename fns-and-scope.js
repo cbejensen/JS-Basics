@@ -108,8 +108,16 @@ alert(newMyName);
 
   //Code Here
 
+function outerFn() {
+    return function() {
+        var name = prompt("Your name please!");
+        return name;
+    }
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
+var innerFn = outerFn();
 
 //Now invoke innerFn.
+alert(innerFn());
